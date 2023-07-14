@@ -1,0 +1,58 @@
+.header {
+  height: 250px;
+}
+.header .container {
+  height: 100%;
+}
+.header .container .row {
+  height: 100%;
+}
+
+.front-page__headline {
+  color: black;
+  width: 100%;
+}
+@media (min-width: 0) {
+  .front-page__headline {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .front-page__headline {
+    margin-top: 0px;
+  }
+}
+.front-page__imagecss {
+  background-image: url(../../sources/images/hero-illustration.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+@media (min-width: 0) {
+  .front-page__imagecss {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .front-page__imagecss {
+    height: 100%;
+  }
+}
+.front-page__button {
+  margin-top: 25px;
+  position: relative;
+}
+.front-page__button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0px;
+  width: 100%;
+  background-color: orange;
+  transition: all 1s;
+}
+.front-page__button:hover::after {
+  height: 5px;
+}/*# sourceMappingURL=main.css.map */

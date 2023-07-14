@@ -1,0 +1,62 @@
+@import "../../node_modules/bootstrap/scss/_functions";
+@import '../../node_modules/bootstrap/scss/_variables';
+@import '../../node_modules/bootstrap/scss/_mixins';
+
+.header {
+    height:250px;
+    .container {
+        height:100%;
+        .row {
+            height:100%;
+        }
+    }
+}
+
+.front-page {
+    &__headline {
+        color:black;
+        width:100%;
+
+        @media (min-width: 0) { 
+            margin-top:50px;
+         }
+         @include media-breakpoint-up(lg) { 
+            margin-top:0px;
+          }
+    }
+    &__imagecss {
+        background-image: url(../../sources/images/hero-illustration.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+
+        @media (min-width: 0) { 
+            height:250px;
+         }
+         @include media-breakpoint-up(lg) { 
+            height:100%;
+          }
+
+    }
+    &__button {
+        margin-top:25px;
+        position: relative;
+
+        &:after {
+            content:"";
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            height:0px;
+            width:100%;
+            background-color: orange;
+            transition: all 1s;
+        }
+        &:hover {
+            &::after {
+                height:5px;
+            }
+        }
+    }
+}

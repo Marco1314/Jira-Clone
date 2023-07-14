@@ -1,10 +1,10 @@
 <?php
-    function render($path) {
+    function render($path, $include) {
         ob_start();
         include $path;
         $content = ob_get_contents();
         ob_end_clean();
 
-        include_once __DIR__."/../view/layout/main.view.php";
+        include_once $include;
     }
 ?>

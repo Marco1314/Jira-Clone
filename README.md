@@ -6,6 +6,9 @@ To get started, install npm and NodeJS by following this link: [https://www.yout
 
 Once you have successfully installed both tools, you can install all the required packages by using the command "npm install".
 
+On Windows:
+If you get an Error, becouse Jest will not install, use "npm install" and "npm install -g" and "Set-ExecutionPolicy  -Scope Process -ExecutationPolicy Bypass"
+
 Bootstrap:
 Bootstrap is a popular open-source framework for developing responsive and mobile-friendly websites and web applications. It was developed by Twitter and provides pre-built design templates, CSS and JavaScript components, as well as interactive elements such as buttons, dropdown menus, modals, and more. Bootstrap makes it easy to create a consistent and visually appealing design for your website without having to write a lot of CSS or JavaScript code.
 

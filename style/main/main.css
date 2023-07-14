@@ -42,6 +42,10 @@
   margin-top: 25px;
   position: relative;
 }
+.front-page__button a {
+  text-decoration: none;
+  color: black;
+}
 .front-page__button:after {
   content: "";
   position: absolute;
@@ -53,6 +57,30 @@
   background-color: orange;
   transition: all 1s;
 }
+.front-page__button:hover {
+  cursor: pointer;
+}
 .front-page__button:hover::after {
   height: 5px;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.login input:focus {
+  border-bottom: 1px solid orange !important;
+  box-shadow: 0 1px 0 0 orange !important;
+}
+.login label {
+  color: orange !important;
+}
+.login__button {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  border: none;
+  background-color: orange;
 }/*# sourceMappingURL=main.css.map */
